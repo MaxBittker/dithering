@@ -10,3 +10,5 @@ http://gazs.github.io/canvas-atkinson-dither/
 https://en.wikipedia.org/wiki/HyperLogLog
 
 http://vacuumflowers.com/temp/staircases/possible_staircases_03.html
+
+https://learn.adafruit.com/mini-thermal-receipt-printer/hacking
