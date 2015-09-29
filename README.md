@@ -5,7 +5,7 @@ a few links for now:
 
 https://en.wikipedia.org/wiki/Dither#Algorithms
 
-http://vacuumflowers.com/temp/staircases/possible_staircases_03.htlm
+http://gazs.github.io/canvas-atkinson-dither/
 
 https://en.wikipedia.org/wiki/HyperLogLog
 
