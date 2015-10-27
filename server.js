@@ -9,13 +9,14 @@ var fs = require("fs");
 var gm = require("gm").subClass({
     imageMagick: true
 });
+var spark = require("spark");
 count = 0;
 c2 = 0;
 
 function watchTag() {
 
     var stream = T.stream('statuses/filter', {
-        track: ['food']
+        track: ['art']
     })
 
     stream.on('tweet', function(tweet) {
@@ -29,7 +30,7 @@ function watchTag() {
             count++;
             stream.on('finish', function() {
 
-                    gm("img/" + c2 + ".jpg").sharpen(3).resize(296).monochrome().write('output/' + count + ".bmp", function(err) {
+                    gm("img/" + c2 + ".jpg").sharpen(3).resize(384).monochrome().normalize().gamma(2.3).orderedDither("All",7).write('output/' + count + ".bmp", function(err) {
                         if (!err) console.log('wrote: ' + id);
                     });
                     c2++
